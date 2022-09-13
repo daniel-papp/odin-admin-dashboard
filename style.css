@@ -124,6 +124,11 @@ img {
     display: flex;
     align-items: center;
     margin: 20px 0;
+    transition: transform 0.5s;
+}
+
+.sidebar li:hover {
+    transform: translateX(20px);
 }
 
 .sidebar img {
