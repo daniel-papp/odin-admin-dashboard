@@ -108,10 +108,15 @@ img {
     display: grid;
     grid-template-rows: auto auto 1fr;
     gap: 40px;
-    padding: 15px;
+    padding: 15px 20px;
     position: relative;
     z-index: 1;
     background-color: var(--clr-main);
+    color: var(--clr-dashwhite);
+}
+
+.sidebar a {
+    text-decoration: none;
     color: var(--clr-dashwhite);
 }
 
