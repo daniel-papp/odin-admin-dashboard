@@ -71,6 +71,29 @@ img {
     font-size: 1.2rem;
 }
 
+.header .profile-secondary img:first-child:hover {
+    animation-name: ring;
+    animation-duration: 0.5s;
+}
+
+ @keyframes ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+ }
+
 .header .profile {
     justify-content: flex-start;
     gap: 15px;
