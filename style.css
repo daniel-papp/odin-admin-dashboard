@@ -101,6 +101,17 @@ img {
     border-radius: 50px;
     border: none;
     font-weight: bold;
+    border: 2px solid var(--clr-main);
+}
+
+.buttons button:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+}
+
+.buttons button:active {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
 }
 
 .sidebar {
