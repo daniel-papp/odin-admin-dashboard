@@ -191,6 +191,39 @@ img {
     font-weight: bold;
 }
 
+/* Rules for collapsed sidebar */
+
+/* Javascript: Add "collapsed" class to body and aside */
+
+body.collapsed {
+    grid-template-columns: 80px auto;
+}
+
+.sidebar.collapsed > div {
+    margin: 0 auto;
+}
+
+.sidebar.collapsed > div * {
+    margin: 10px auto;
+}
+
+.sidebar.collapsed h1,
+.sidebar.collapsed p {
+    max-width: 0;
+    overflow: hidden;
+}
+
+.sidebar li {
+    transition: all 0.25s;
+}
+
+.sidebar li:hover {
+    transform: scale(1.4);
+}
+
+
+/* End of rules for collapsed sidebar */
+
 .main-content {
     grid-column: 2 / 3;
     background-color: #e1e8f0;
