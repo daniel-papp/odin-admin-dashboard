@@ -194,8 +194,6 @@ img {
 
 /* Rules for collapsed sidebar */
 
-/* Javascript: Add "collapsed" class to body and aside */
-
 body.collapsed {
     grid-template-columns: 80px auto;
 }
@@ -214,15 +212,32 @@ body.collapsed {
     overflow: hidden;
 }
 
-.sidebar li {
+.sidebar.collapsed li {
     transition: all 0.25s;
 }
 
-.sidebar li:hover {
+.sidebar.collapsed li:hover {
     transform: scale(1.4);
 }
 
+/* Collapse transitions */
 
+body.collapsed,
+.sidebar.collapsed > div,
+.sidebar.collapsed > div *,
+.sidebar.collapsed h1,
+.sidebar.collapsed p {
+    transition: all 0.25s;
+}
+
+body,
+.sidebar > div,
+.sidebar > div *,
+.sidebar h1,
+.sidebar p {
+    transition: all 0.25s;
+}
+            
 /* End of rules for collapsed sidebar */
 
 .main-content {
